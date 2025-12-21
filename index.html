@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="KGEC Robotics Society — Think, Build, Renovate. Projects: DEBRIS, Hand Gesture Car, IoT dashboards, AI/ML demos." />
+  <title>KGEC Robotics Society — Redesigned</title>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="KGEC Robotics Society — Think, Build, Renovate" />
+  <meta property="og:description" content="Student-led robotics projects and research in Mechatronics, IoT, AI/ML and more." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <img src="data:image/svg+xml;utf8,
+          <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'>
+            <rect rx='4' width='24' height='24' fill='%230e4a7b'/>
+            <path d='M6 16l4-8 4 8' stroke='%23fff' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/>
+            <circle cx='12' cy='6.5' r='1.2' fill='%23ff2d55'/>
+          </svg>"
+          alt="KGEC Robotics logo" width="48" height="48" />
+        <div class="brand-text">
+          <h1>KGEC Robotics Society</h1>
+          <p class="motto">Think · Build · Renovate</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Entry -->
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <h2 id="hero-title">Engineering the future — student robotics at KGEC</h2>
+        <p class="lead">We build autonomous robots, IoT dashboards, AI/ML systems and hardware prototypes. Join us to learn, innovate and ship real projects.</p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">Explore Projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <ul class="badges">
+          <li>Mechatronics</li>
+          <li>AI / Computer Vision</li>
+          <li>IoT & Embedded</li>
+          <li>Web & Graphics</li>
+        </ul>
+      </div>
+
+      <!-- Carousel: auto slides -->
+      <div class="hero-right">
+        <div class="carousel" aria-roledescription="carousel" aria-label="Project showcase">
+          <div class="slides" id="slides">
+            <figure class="slide" data-title="DEBRIS Cleaner Bot">
+              <img loading="lazy" src="data:image/svg+xml;utf8,\
+                <svg xmlns='http://www.w3.org/2000/svg' width='800' height='480'><rect width='100%' height='100%' fill='%23e8f2fb'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='22' fill='%230e4a7b'>DEBRIS Cleaner Bot — Demo</text></svg>"
+                alt="DEBRIS cleaning robot prototype" />
+              <figcaption><strong>DEBRIS</strong> — Multi-agent cleaning path coverage (DARP)</figcaption>
+            </figure>
+
+            <figure class="slide" data-title="Hand Gesture Car">
+              <img loading="lazy" src="data:image/svg+xml;utf8,\
+                <svg xmlns='http://www.w3.org/2000/svg' width='800' height='480'><rect width='100%' height='100%' fill='%fff1f3'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='22' fill='%23b3002d'>Hand Gesture Car — Prototype</text></svg>"
+                alt="Hand gesture controlled robotic car" />
+              <figcaption><strong>Gesture Car</strong> — Arduino + IMU controlled rover</figcaption>
+            </figure>
+
+            <figure class="slide" data-title="IoT Dashboard">
+              <img loading="lazy" src="data:image/svg+xml;utf8,\
+                <svg xmlns='http://www.w3.org/2000/svg' width='800' height='480'><rect width='100%' height='100%' fill='%f0fbff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='22' fill='%003d66'>IoT Dashboard — Live</text></svg>"
+                alt="Firebase IoT dashboard screenshot" />
+              <figcaption><strong>IoT Dashboard</strong> — Realtime sensor visualization</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-controls" aria-hidden="false">
+            <button id="prev" class="carousel-btn" aria-label="Previous slide">‹</button>
+            <button id="next" class="carousel-btn" aria-label="Next slide">›</button>
+          </div>
+
+          <ol class="carousel-indicators" id="indicators" role="tablist" aria-label="Slide indicators">
+            <!-- JS populates -->
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="section about wrap" aria-labelledby="about-title">
+      <h3 id="about-title">About the Society</h3>
+      <p>KGEC Robotics Society is a student-run group fostering hands-on learning acrossEmbedded Electronics, Mechatronics, Computer Vision, and Cloud-integrated IoT. We mentor students, organize workshops, and participate in competitions.</p>
+      <div class="stats">
+        <div><strong>50+</strong><span>Projects</span></div>
+        <div><strong>120+</strong><span>Members</span></div>
+        <div><strong>10</strong><span>Faculty Mentors</span></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects wrap" aria-labelledby="projects-title">
+      <h3 id="projects-title">Highlighted Projects</h3>
+      <div class="grid projects-grid" role="list">
+        <article class="card" role="listitem" tabindex="0">
+          <img src="data:image/svg+xml;utf8,\
+            <svg xmlns='http://www.w3.org/2000/svg' width='600' height='340'><rect width='100%' height='100%' fill='%23e8f2fb'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%0e4a7b'>DEBRIS — Cleaning Bot</text></svg>"
+            alt="DEBRIS cleaning robot" loading="lazy" />
+          <div class="card-body">
+            <h4>DEBRIS — Cleaning Bot</h4>
+            <p>Multi-agent coverage using DARP (Distributed Area Routing for Coverage). Efficient tile allocation for autonomous cleaning robots.</p>
+            <div class="card-actions">
+              <a class="btn small" href="https://github.com/" target="_blank" rel="noopener noreferrer">View Code</a>
+              <a class="btn small ghost" href="#" data-modal="demo" aria-controls="modal">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem" tabindex="0">
+          <img src="data:image/svg+xml;utf8,\
+            <svg xmlns='http://www.w3.org/2000/svg' width='600' height='340'><rect width='100%' height='100%' fill='%fff1f3'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%b3002d'>Gesture Car</text></svg>"
+            alt="Hand Gesture Car" loading="lazy" />
+          <div class="card-body">
+            <h4>Hand Gesture Car</h4>
+            <p>Arduino Nano + MPU6050 IMU interprets wrist gestures to steer a small rover. Great for prototyping human-robot interfaces.</p>
+            <div class="card-actions">
+              <a class="btn small" href="https://youtube.com/" target="_blank" rel="noopener noreferrer">Watch</a>
+              <a class="btn small ghost" href="#" data-modal="tech" aria-controls="modal">Tech</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem" tabindex="0">
+          <img src="data:image/svg+xml;utf8,\
+            <svg xmlns='http://www.w3.org/2000/svg' width='600' height='340'><rect width='100%' height='100%' fill='%f0fbff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%003d66'>IoT Dashboard</text></svg>"
+            alt="IoT Dashboard" loading="lazy" />
+          <div class="card-body">
+            <h4>Realtime IoT Dashboard</h4>
+            <p>ESP8266 / NodeMCU streams sensor data to Firebase with a clean visual dashboard and alerting logic.</p>
+            <div class="card-actions">
+              <a class="btn small" href="https://github.com/" target="_blank" rel="noopener noreferrer">Repo</a>
+              <a class="btn small ghost" href="#" data-modal="dashboard" aria-controls="modal">Preview</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section team wrap" aria-labelledby="team-title">
+      <h3 id="team-title">Core Team & Mentors</h3>
+
+      <div class="grid team-grid">
+        <div class="person card">
+          <img alt="Team lead - A. Student" src="data:image/svg+xml;utf8,\
+            <svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%' height='100%' fill='%e6f2fb'/><circle cx='150' cy='120' r='50' fill='%0e4a7b'/></svg>"
+            loading="lazy" />
+          <div class="card-body">
+            <h4>A. Student</h4>
+            <p class="muted">President — Robotics & Mechatronics</p>
+          </div>
+        </div>
+
+        <div class="person card">
+          <img alt="Team lead - B. Student" src="data:image/svg+xml;utf8,\
+            <svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%' height='100%' fill='%fff1f3'/><circle cx='150' cy='120' r='50' fill='%b3002d'/></svg>"
+            loading="lazy" />
+          <div class="card-body">
+            <h4>B. Student</h4>
+            <p class="muted">VP — AI & Vision</p>
+          </div>
+        </div>
+
+        <div class="person card">
+          <img alt="Faculty Mentor - Dr. R. Mentor" src="data:image/svg+xml;utf8,\
+            <svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%' height='100%' fill='%f0fbff'/><circle cx='150' cy='120' r='50' fill='%003d66'/></svg>"
+            loading="lazy" />
+          <div class="card-body">
+            <h4>Dr. R. Mentor</h4>
+            <p class="muted">Faculty Mentor — Electronics</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="muted small">Note: Contact info & faculty names shown are placeholders. Replace with actual contacts before public release.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact wrap" aria-labelledby="contact-title">
+      <h3 id="contact-title">Contact & Join</h3>
+      <div class="contact-grid">
+        <div class="contact-card card">
+          <h4>Get in touch</h4>
+          <p>If you'd like to collaborate, request a workshop, or join the society, use the form or reach out via our socials below.</p>
+
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:contact@kgec-robotics.example">contact@kgec-robotics.example</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><strong>Location:</strong> Kalyani Government Engineering College, Nadia, West Bengal</li>
+          </ul>
+
+          <div class="socials">
+            <a class="icon" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+            <a class="icon" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+            <a class="icon" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="card form-card" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID" aria-labelledby="contact-title" novalidate>
+          <!-- Replace YOUR_FORMSPREE_ID before going live -->
+          <label for="name">Name <input id="name" name="name" type="text" required /></label>
+          <label for="email">Email <input id="email" name="email" type="email" required /></label>
+          <label for="message">Message <textarea id="message" name="message" rows="5" required></textarea></label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+
+          <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <small>© <span id="year"></span> KGEC Robotics Society — Redesigned Template</small>
+      </div>
+      <div>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal template -->
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close modal">×</button>
+      <h4 id="modalTitle">Quick Demo</h4>
+      <p>This is a placeholder demo. Replace modal content with videos, images or readme excerpts for each project.</p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
